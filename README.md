@@ -11,10 +11,13 @@
 
 
 
-<p align=center> ¡Este readme corresponde al Proyecto Individual Nro. 2 de la Etapa de labs! para la Cohorte DATA-PT-06.
+<p align=center> 
 
-<img src="siniestro_vial.jpeg" alt="alt text" width="300" style="display: block; margin: auto;"/>
+<img src="siniestro_vial.jpeg" alt="alt text" width="500" style="display: block; margin: auto;"/>
 
+<hr> 
+<p align=center> 
+¡Este readme corresponde al Proyecto Individual Nro. 2 de la Etapa de labs! para la Cohorte DATA-PT-06.
 <hr>  
 
 ## **Descripción y Contexto**
@@ -59,6 +62,7 @@ Posteriormente se analizaron variables específicas, como el tipo de movilidad d
 
 Se examinaron las correlaciones entre diferentes variables, como la relación entre el día de la semana y el número de víctimas, y se presentaron las correlaciones en una matriz de calor.
 
+<p align=center> 
 <img src="matriz.png" alt="alt text" width="500" style="display: block; margin: auto;"/>
 
 <p> 
@@ -74,6 +78,7 @@ Se mostraron las primeras filas del DataFrame y se exploraron los datos nulos y 
 
 Se contabilizaron y verificaron los valores duplicados en el DataFrame, y se comprobó que no existían valores faltantes en la columna 'ID_hecho'. Se identificaron y corrigieron los valores nulos en la columna 'EDAD', transformando su tipo de dato a numérico y realizando una imputación de datos faltantes basada en la media de las edades por sexo.
 
+<p align=center> 
 <img src="descarga edades.png" alt="alt text" width="500" style="display: block; margin: auto;"/>
 
 <p> 
@@ -84,6 +89,7 @@ Se graficaron además las frecuencias de los roles en el siniestro y los sexos d
 
 Posteriormente se examinaron posibles valores atípicos en la columna 'EDAD' y 'NUMERO DE VICTIMAS' por incidente. No se encontraron valores atípicos.
 
+<p align=center> 
 <img src="descarga valores atipicos.png" alt="alt text" width="500" style="display: block; margin: auto;"/>
 
 <p> 
