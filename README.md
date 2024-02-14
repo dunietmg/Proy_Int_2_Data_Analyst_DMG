@@ -1,7 +1,7 @@
 
 
-
-  <img src="henry logo.png" alt="alt text" width="100" style="display: block; margin: auto;"/>
+<p align=center> 
+<img src="henry logo.png" alt="alt text" width="100" style="display: block; margin: auto;"/>
 
   <h1 align="center">PROYECTO INDIVIDUAL Nº2</h1>
   <h1 align="center">Autor: Duniet Marrero García</h1>
