@@ -79,7 +79,7 @@ Se mostraron las primeras filas del DataFrame y se exploraron los datos nulos y 
 Se contabilizaron y verificaron los valores duplicados en el DataFrame, y se comprobó que no existían valores faltantes en la columna 'ID_hecho'. Se identificaron y corrigieron los valores nulos en la columna 'EDAD', transformando su tipo de dato a numérico y realizando una imputación de datos faltantes basada en la media de las edades por sexo.
 
 <p align=center> 
-<img src="descarga edades.png" alt="alt text" width="500" style="display: block; margin: auto;"/>
+<img src="descarga edades.png" alt="alt text" width="1000" style="display: block; margin: auto;"/>
 
 <p> 
 
