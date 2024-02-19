@@ -114,25 +114,50 @@ Este proceso de EDA y ETL proporciona una comprensión del conjunto de datos y e
 El notebook fue realizado en Google Colaboratory y se puede consultar en el siguiente [enlace](https://colab.research.google.com/drive/1O0ZZ89CkxYTywOkcALzFG3pYsZboXGSK?usp=sharing).
 
 
-## ** Medición de indicadores mediante KPIs**
+## **Medición de indicadores mediante KPIs**
 
 Los KPIs (Indicadores Claves de Desempeño) evaluan el progreso hacia los objetivos de una organización, estos indicadores proporcionn una visión rápida y clara del rendimiento de una empresa en relación con sus metas estratégicas, , por lo que son cruciales para el seguimiento del desempeño y la toma de decisiones.
 
 En el proyecto se plantearon tres objetivos (KPIs) en función de lograr la disminución de la cantidad de víctimas fatales y ocurrencia de siniestros viales, los cuales fueron propuestos luego de analizar minusiosamente los datos proporcionados.
 
-* - Reducir en un 10% la tasa de homicidios en siniestros viales de los últimos seis meses en comparación con la tasa de homicidios del semestre anterior*
+- **KPI Nro. 1:** Reducir en un 10% la tasa de homicidios en siniestros viales de los últimos seis meses en comparación con la tasa de homicidios del semestre anterior. Se definió la tasa de homicidios como: 
 
-Las tasas de mortalidad relacionadas con siniestros viales suelen ser un indicador crítico de la seguridad vial en una región. Se define como Tasa de homicidios en siniestros viales al número de víctimas fatales en accidentes de tránsito por cada 100,000 habitantes en un área geográfica durante un período de tiempo específico, en este caso se toman 6 meses. Su fórmula es:
+<p align=center> 
+(Número de homicidios en siniestros viales / Población total) * 100,000
 
-ú
-ó
- 
+- **KPI Nro. 2:** Reducir en un 7% la cantidad de accidentes mortales de motociclistas en el último año con respecto al año anterior. Este indicador se definió como: 
 
-Como Población Total se calculó la población para el año 2021 a partir de los censos poblacionales del año 2010 y 2022.
+<p align=center> 
+(Número de accidentes mortales con víctimas en moto en el año anterior - Número de accidentes mortales con víctimas en moto en el año actual) / (Número de accidentes mortales con víctimas en moto en el año anterior) * 100
 
-En este caso, para el año 2021, la Tasa de homicidios en siniestros viales fue de 1.77 lo que significa que, durante los primeros 6 meses del año 2021, hubo aproximadamente 1.77 homicidios en accidentes de tránsito por cada 100,000 habitantes. Ahora, el objetivo planteado es reducir esta tasa para el siguiente semestre de 2021 en un 10%, esto es 1.60. Cuando se calcula el KPI para este período se obtiene que la Tasa de homicidios en siniestros viales fue de 1.35, lo que significa que para el segundo semestre de 2021 se cumple con el objetivo propuesto.
+- **KPI Nro. 3:** Reducir en un 10% la cantidad de accidentes mortales ocurridos en avenidas en el último año con respecto al año anterior. Este indicador se definió como: 
 
-Reducir en un 7% la cantidad de accidentes mortales de motociclistas en el último año, en CABA, respecto al año anterior
+<p align=center> 
+(Número de accidentes mortales ocurridos en avenidas en el año anterior - Número de accidentes mortales ocurridos en avenidas en el año actual) / (Número de accidentes mortales ocurridos en avenidas en el año anterior) * 100
 
-Como se vio en el análisis exploratorio, el 42% de las víctimas mortales se transportaban en moto al momento del hecho. Por lo que se consideró importante proponer el monitoreo de la cantidad de accidentes mortales en este tipo de conductor. Para ello se define a la Cantidad de accidentes mortales de motociclistas como el número absoluto de accidentes fatales en los que estuvieron involucradas víctimas que viajaban en moto en un determinado periodo temporal. La fórmula para medir la evolución de los accidentes mortales con víctimas en moto es:
+Como Población Total se tomó la cifra de 3.121.707 habitantes (Censo 2022), valor proporcionado por la Ciudad Autónoma de Buenos Aires a través del sitio web [argentina.gob.ar](https://www.argentina.gob.ar/caba#:~:text=Superficie%3A%20200%20Km%C2%B2.,707%20habitantes%20(Censo%202022)).
+
+<p align=center> 
+<img src="KPIs.png" alt="alt text" width="500" style="display: block; margin: auto;"/>
+
+<p> 
+
+## **Conclusiones y Recomendaciones**
+
+Entre los años registrados en los datasets, 2016 a 2021, se registraron en total 695 siniestros viales, los cuales provocaron 760 víctimas fatales, de las cuales 544 fueron del sexo masculino (71.58%) y 166 del sexo femenino (28.42%). El grupo de edades de mayor riesgos fue entre los 25 y 45 años. 
+
+Diciembre es el mes que resultó con el mayor número de siniestros en el período analizado. En relación al tipo de movilidad de las víctimas fatales en accidentes, el mayor riesgo lo tienen los motociclistas con un 39.61%, seguidos de los peatones con un 35.00% y en tercer lugar los conductores de autos que representaron el 12.11%. Estos indicadores se pueden analizar teniendo en cuenta que tanto los peatones como los motociclistas están más expuestos al entorno en comparación con los ocupantes de vehículos cerrados como automóviles, ya que tienen mucha menos protección que los ocupantes de vehículos (cinturones de seguridad, airbags y carrocería).  
+
+El 61.73% de los siniestros ocurrió en las avenidas de la ciudad, siendo el tipo de vía con mayor riesgo de que ocurra un accidente de tránsito. Además del total de accidentes, el 77.55% ocurrió en un cruce de calles y el 22.45% sucedió en las inmediaciones de la cuadra, representando las esquinas los puntos en los que existe mas probabilidades de ocurrencia de accidentes. Se puede comentar en este sentido que las esquinas suelen ser puntos de confluencia de diferentes flujos de tráfico, ya sea vehículos que cambian de dirección, peatones cruzando la calle o ciclistas compartiendo la vía, en estas intersecciones los conductores pueden tener su visibilidad reducida debido a obstáculos como edificios, árboles, postes de luz u otros vehículos estacionados, esta combinación aumenta la probabilidad de que ocurra un siniestro vial.
+
+Tomando en cuenta el último año para el análisis de los KPIs para el segundo semestre del año 2021, no se cumplió con el objetivo de disminuir la tasa de homicidios en siniestros viales en un 10%, tampoco se logró reducir un 7% la cantidad de víctimas mortales en motos en comparación con el año anterior, en cambio, comparando igualmente 2021 con 2020, si se logró disminuir en un 10% la ocurrencia de accidentes en avenidas, lo que resultó en un aumento en seguridad al transitar por este tipo de vía.
+
+En función de los resultados y análisis realizados, se hacen las siguientes recomendaciones:
+
+- Continuar monitoreando los objetivos propuestos (KPIs) en los próximos periodos de tiempo, acompañados de campañas de prevención, fundamentalmente enfocadas en los conductores de motos y los usuarios de las avenidas.
+
+- Realizar jornadas de educación vial en lugares públicos de alta confluencia de personas dentro de la ciudad y enfocar en ellas tanto a conductores como a peatones, los cuales, como se vio en el informe, son el segundo grupo de mayor riesgo.
+
+- Aumentar las campañas de seguridad vial entre los días viernes y lunes, y realizar una intensificación de las mismas en diciembre que es el mes de mayor ocurrencia de accidentes.
+
 
