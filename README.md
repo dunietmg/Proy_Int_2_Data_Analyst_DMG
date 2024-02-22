@@ -135,7 +135,7 @@ En el proyecto se plantearon tres objetivos (KPIs) en función de lograr la dism
 <p align=center> 
 (Número de accidentes mortales ocurridos en avenidas en el año anterior - Número de accidentes mortales ocurridos en avenidas en el año actual) / (Número de accidentes mortales ocurridos en avenidas en el año anterior) * 100
 
-Como Población Total se tomó la cifra de 3.121.707 habitantes (Censo 2022), valor proporcionado por la Ciudad Autónoma de Buenos Aires a través del sitio web [argentina.gob.ar](https://www.argentina.gob.ar/caba#:~:text=Superficie%3A%20200%20Km%C2%B2.,707%20habitantes%20(Censo%202022)).
+Como Población Total se tomó el dataset: [Proyecciones de población por sexo y grupos quinquenales de edad. Ciudad Autónoma de Buenos Aires. Años 2010-2040](https://www.estadisticaciudad.gob.ar/eyc/?p=29329) de la página de [Buenos Aires](https://buenosaires.gob.ar/inicio/), el mismo se cargó directamente desde la web a Power BI y allí se transformaron los datos para ser usado en la visualización.
 
 <p align=center> 
 <img src="KPIs.png" alt="alt text" width="500" style="display: block; margin: auto;"/>
