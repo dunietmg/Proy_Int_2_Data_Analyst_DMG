@@ -1,11 +1,11 @@
 
 
 <p align=center> 
-<img src="henry logo.png" alt="alt text" width="100" style="display: block; margin: auto;"/>
+<img src="Images/henry logo.png" alt="alt text" width="100" style="display: block; margin: auto;"/>
 
   <h1 align="center">PROYECTO INDIVIDUAL Nº2</h1>
-  <h1 align="center">Autor: Duniet Marrero García</h1>
-  <h1 align="center">Tema: Data Analyst. Siniestros Viales en Buenos Aires.</h1>
+  
+  <h1 align="center">Data Analyst. Siniestros Viales en Buenos Aires.</h1>
 
 </body>
 
@@ -13,11 +13,8 @@
 
 <p align=center> 
 
-<img src="siniestro_vial.jpeg" alt="alt text" width="500" style="display: block; margin: auto;"/>
+<img src="Images/Banner.png" alt="alt text" width="800" style="display: block; margin: auto;"/>
 
-<hr> 
-<p align=center> 
-¡Este readme corresponde al Proyecto Individual Nro. 2 de la Etapa de labs! para la Cohorte DATA-PT-06.
 <hr>  
 
 ## **Descripción y Contexto**
@@ -49,6 +46,12 @@ Además se pueden descargar los siguientes archivos auxiliares en formato pdf:
 
 Para la realización del proyecto se utilizó Python, NumPy, Pandas, Matplotlib y Seaborn en un notebook de Google Colaboratory para desarrollar los procesos de Análisis Exploratorio de los Datos (EDA) y para la Extracción, Transformación y Carga de los mismos (ETL). La visualización de los análisis y resultados se realizó en un dashboard interactivo utilizando Power BI.
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white) ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)  
+![Matplotlib](https://img.shields.io/badge/Matplotlib-3776AB?style=for-the-badge&logo=matplotlib&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-013243?style=for-the-badge&logo=seaborn&logoColor=white) ![SQL](https://img.shields.io/badge/SQL-003366?style=for-the-badge&logo=postgresql&logoColor=white) ![Excel](https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)  ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=white) 
+
+
 ## **Análisis Exploratorio de los Datos (EDA) y Extracción, Transformación y Carga (ETL)**
 
 Para realizar el EDA y el ETL se importaron las librerías necesarias como Pandas, NumPy, Matplotlib y Seaborn.
@@ -68,7 +71,7 @@ Posteriormente se analizaron variables específicas, como el tipo de movilidad d
 Se examinaron las correlaciones entre diferentes variables, como la relación entre el día de la semana y el número de víctimas, y se presentaron las correlaciones en una matriz de calor.
 
 <p align=center> 
-<img src="matriz.png" alt="alt text" width="500" style="display: block; margin: auto;"/>
+<img src="Images/matriz.png" alt="alt text" width="500" style="display: block; margin: auto;"/>
 
 <p> 
 
@@ -84,18 +87,18 @@ Se mostraron las primeras filas del DataFrame y se exploraron los datos nulos y 
 Se contabilizaron y verificaron los valores duplicados en el DataFrame, y se comprobó que no existían valores faltantes en la columna 'ID_hecho'. Se identificaron y corrigieron los valores nulos en la columna 'EDAD', transformando su tipo de dato a numérico y realizando una imputación de datos faltantes basada en la media de las edades por sexo.
 
 <p align=center> 
-<img src="descarga edades.png" alt="alt text" width="1000" style="display: block; margin: auto;"/>
+<img src="Images/descarga edades.png" alt="alt text" width="1000" style="display: block; margin: auto;"/>
 
 <p> 
 
-Las edades de entre 20 y 40 años son las que tienen la mayor frecuencia de víctimas. Se puede analizar que las personas en este rango de edad suelen estar en un período de mayor actividad social y profesional, lo que significa que pasan más tiempo en la carretera debido al trabajo, estudio, actividades recreativas, etc. Los adultos jóvenes a menudo participan en comportamientos de riesgo en la carretera.
+Las edades de entre 20 y 45 años son las que tienen la mayor frecuencia de víctimas. Se puede analizar que las personas en este rango de edad suelen estar en un período de mayor actividad social y profesional, lo que significa que pasan más tiempo en la carretera debido al trabajo, estudio, actividades recreativas, etc. Los adultos jóvenes a menudo participan en comportamientos de riesgo en la carretera.
 
 Se graficaron además las frecuencias de los roles en el siniestro y los sexos de las víctimas, destacando las tendencias observadas y las posibles interpretaciones detrás de ellas.
 
 Posteriormente se examinaron posibles valores atípicos en la columna 'EDAD' y 'NUMERO DE VICTIMAS' por incidente. No se encontraron valores atípicos.
 
 <p align=center> 
-<img src="descarga valores atipicos.png" alt="alt text" width="500" style="display: block; margin: auto;"/>
+<img src="Images/descarga valores atipicos.png" alt="alt text" width="500" style="display: block; margin: auto;"/>
 
 <p> 
 
@@ -112,6 +115,14 @@ Este proceso de EDA y ETL proporciona una comprensión del conjunto de datos y e
 </p>
 
 El notebook fue realizado en Google Colaboratory y se puede consultar en el siguiente [enlace](https://colab.research.google.com/drive/1O0ZZ89CkxYTywOkcALzFG3pYsZboXGSK?usp=sharing).
+
+
+## **Visualización de los Datos**
+
+Se realizó un dashboard de Power BI para la visualización interactiva de los resultados, facilitando el análisis intuitivo y la toma de decisiones informadas.
+
+<p align=center> 
+<img src="Images/Dash_siniestros.png" alt="alt text" width="800" style="display: block; margin: auto;"/>
 
 
 ## **Medición de indicadores mediante KPIs**
@@ -135,22 +146,27 @@ En el proyecto se plantearon tres objetivos (KPIs) en función de lograr la dism
 <p align=center> 
 (Número de accidentes mortales ocurridos en avenidas en el año anterior - Número de accidentes mortales ocurridos en avenidas en el año actual) / (Número de accidentes mortales ocurridos en avenidas en el año anterior) * 100
 
+- **KPI Nro. 4:** Reducir en un 10% la cantidad de víctimas del sexo masculino en el último año con respecto al año anterior. Este indicador se definió como: 
+
+<p align=center> 
+(Cantidad de víctimas del sexo masculino en el año anterior - Cantidad de víctimas del sexo masculino en el año actual) / (Cantidad de víctimas del sexo masculino en el año anterior) * 100
+
 Como Población Total se tomó el dataset: [Proyecciones de población por sexo y grupos quinquenales de edad. Ciudad Autónoma de Buenos Aires. Años 2010-2040](https://www.estadisticaciudad.gob.ar/eyc/?p=29329) de la página de [Buenos Aires](https://buenosaires.gob.ar/inicio/), el mismo se cargó directamente desde la web a Power BI y allí se transformaron los datos para ser usado en la visualización.
 
 <p align=center> 
-<img src="KPIs.png" alt="alt text" width="500" style="display: block; margin: auto;"/>
+<img src="Images/KPI.png" alt="alt text" width="400" style="display: block; margin: auto;"/>
 
 <p> 
 
 ## **Conclusiones y Recomendaciones**
 
-Entre los años registrados en los datasets, 2016 a 2021, se registraron en total 695 siniestros viales, los cuales provocaron 760 víctimas fatales, de las cuales 544 fueron del sexo masculino (71.58%) y 166 del sexo femenino (28.42%). El grupo de edades de mayor riesgos fue entre los 25 y 45 años. 
+Entre los años registrados en los datasets, 2016 a 2021, se registraron en total 695 siniestros viales, los cuales provocaron 716 víctimas fatales, de las cuales 544 fueron del sexo masculino (76.62%) y 166 del sexo femenino (23.38%). El grupo de edades de mayor riesgos fue entre los 25 y 45 años. 
 
-Diciembre es el mes que resultó con el mayor número de siniestros en el período analizado. En relación al tipo de movilidad de las víctimas fatales en accidentes, el mayor riesgo lo tienen los motociclistas con un 39.61%, seguidos de los peatones con un 35.00% y en tercer lugar los conductores de autos que representaron el 12.11%. Estos indicadores se pueden analizar teniendo en cuenta que tanto los peatones como los motociclistas están más expuestos al entorno en comparación con los ocupantes de vehículos cerrados como automóviles, ya que tienen mucha menos protección que los ocupantes de vehículos (cinturones de seguridad, airbags y carrocería).  
+Los meses de Noviembre y Diciembre resultaron con el mayor número de siniestros en el período analizado. En relación al tipo de movilidad de las víctimas fatales en accidentes, el mayor riesgo lo tienen los motociclistas con un 42.04%, seguidos de los peatones con un 37.15% y en tercer lugar los conductores de autos que representaron el 12.85%. Estos indicadores se pueden analizar teniendo en cuenta que tanto los peatones como los motociclistas están más expuestos al entorno en comparación con los ocupantes de vehículos cerrados como automóviles, ya que tienen mucha menos protección que los ocupantes de vehículos (cinturones de seguridad, airbags y carrocería).  
 
-El 61.73% de los siniestros ocurrió en las avenidas de la ciudad, siendo el tipo de vía con mayor riesgo de que ocurra un accidente de tránsito. Además del total de accidentes, el 77.55% ocurrió en un cruce de calles y el 22.45% sucedió en las inmediaciones de la cuadra, representando las esquinas los puntos en los que existe mas probabilidades de ocurrencia de accidentes. Se puede comentar en este sentido que las esquinas suelen ser puntos de confluencia de diferentes flujos de tráfico, ya sea vehículos que cambian de dirección, peatones cruzando la calle o ciclistas compartiendo la vía, en estas intersecciones los conductores pueden tener su visibilidad reducida debido a obstáculos como edificios, árboles, postes de luz u otros vehículos estacionados, esta combinación aumenta la probabilidad de que ocurra un siniestro vial.
+El 61.73% de los siniestros ocurrió en las avenidas de la ciudad, siendo el tipo de vía con mayor riesgo de que ocurra un accidente de tránsito. Además del total de accidentes, el 73.88% ocurrió en un cruce de calles y el 26.12% sucedió en las inmediaciones de la cuadra, representando las esquinas los puntos en los que existe mas probabilidades de ocurrencia de accidentes. Se puede comentar en este sentido que las esquinas suelen ser puntos de confluencia de diferentes flujos de tráfico, ya sea vehículos que cambian de dirección, peatones cruzando la calle o ciclistas compartiendo la vía, en estas intersecciones los conductores pueden tener su visibilidad reducida debido a obstáculos como edificios, árboles, postes de luz u otros vehículos estacionados, esta combinación aumenta la probabilidad de que ocurra un siniestro vial.
 
-Tomando en cuenta el último año para el análisis de los KPIs para el segundo semestre del año 2021, no se cumplió con el objetivo de disminuir la tasa de homicidios en siniestros viales en un 10%, tampoco se logró reducir un 7% la cantidad de víctimas mortales en motos en comparación con el año anterior, en cambio, comparando igualmente 2021 con 2020, si se logró disminuir en un 10% la ocurrencia de accidentes en avenidas, lo que resultó en un aumento en seguridad al transitar por este tipo de vía.
+Tomando en cuenta el último año para el análisis de los KPIs para el segundo semestre del año 2021, no se cumplió con el objetivo de disminuir la tasa de homicidios en siniestros viales en un 10%, tampoco se logró reducir un 7% la cantidad de víctimas mortales en motos en comparación con el año anterior ni reducir en un 10% la cantidad de accidentes de personas del sexo masculino, en cambio, comparando igualmente 2021 con 2020, si se logró disminuir en un 10% la ocurrencia de accidentes en avenidas, lo que resultó en un aumento en seguridad al transitar por este tipo de vía.
 
 En función de los resultados y análisis realizados, se hacen las siguientes recomendaciones:
 
@@ -160,4 +176,20 @@ En función de los resultados y análisis realizados, se hacen las siguientes re
 
 - Aumentar las campañas de seguridad vial entre los días viernes y lunes, y realizar una intensificación de las mismas en diciembre que es el mes de mayor ocurrencia de accidentes.
 
+
+## Autor:  Duniet Marrero García <br />
+
+
+<div align="center">
+  <a href="https://www.linkedin.com/in/duniet-marrero-garcia-7a246aa1" target="_blank">
+    <img src="https://avatars.githubusercontent.com/u/138503506?v=4" width="200" alt="Duniet Marrero García">
+  </a>
+  <br>
+  <a href="https://www.linkedin.com/in/duniet-marrero-garcia-7a246aa1" target="_blank">
+    <img src="https://img.shields.io/badge/linkedin%20-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href='mailto:dunietmg@gmail.com'>
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
+  </a>
+</div>
 
