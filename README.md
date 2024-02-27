@@ -56,9 +56,7 @@ Para la realización del proyecto se utilizó Python, NumPy, Pandas, Matplotlib 
 
 Para realizar el EDA y el ETL se importaron las librerías necesarias como Pandas, NumPy, Matplotlib y Seaborn.
 
-
 **Archivo: Homicidios_HECHOS**
-<hr> 
 
 Primeramente se cargó el conjunto de datos desde el archivo "homicidios.xlsx" en la pestaña 'HECHOS' y se exploró su información básica, como el tamaño del DataFrame, la presencia de datos nulos y las principales estadísticas descriptivas de las variables numéricas (Media, Desviación Estándar, Valor máximo, Valor mínimo, etc.). En este punto, se proporcionaron conclusiones sobre el dataset, como la cantidad de años cubiertos, la distribución de las víctimas por siniestro y la distribución de siniestros por año, mes, franja horaria y comuna. 
 
@@ -78,7 +76,6 @@ Se examinaron las correlaciones entre diferentes variables, como la relación en
 Finalmente se realizaron ajustes en los nombres de las columnas resultantes para estandarizar los mismos y facilitar la comprensión y el análisis de los datos.
 
 **Archivo: Homicidios_VICTIMAS**
-<hr> 
 
 Se cargaron los datos desde el mismo archivo Excel, pero en esta ocasión específicamente desde la pestaña 'VICTIMAS' para realizar la exploración del resto de la información proporcionada.
 
@@ -105,7 +102,6 @@ Posteriormente se examinaron posibles valores atípicos en la columna 'EDAD' y '
 En este archivo también se estandarizaron los nombres de las columnas para asegurar consistencia y claridad en el análisis.
 
 **Unión de ambos archivos en un solo Dataset.**
-<hr> 
 
 Para unir ambos archivos, se eliminaron las columnas duplicadas entre los datasets de víctimas y hechos para facilitar la fusión de ambos conjuntos de datos y no conservar información repetida ni redundante.
 
@@ -114,12 +110,12 @@ Por último, se fusionaron los datasets de HECHOS y VICTIMAS en un único DataFr
 Este proceso de EDA y ETL proporciona una comprensión del conjunto de datos y establece una base sólida para análisis más avanzados y visualización de datos con un dataset limpio y transformado para generar informes fiables y de calidad.
 </p>
 
-El notebook fue realizado en Google Colaboratory y se puede consultar en el siguiente [enlace](https://colab.research.google.com/drive/1O0ZZ89CkxYTywOkcALzFG3pYsZboXGSK?usp=sharing).
+El notebook fue realizado en Google Colaboratory y se puede consultar en el repositorio o en el siguiente [enlace](https://colab.research.google.com/drive/1O0ZZ89CkxYTywOkcALzFG3pYsZboXGSK?usp=sharing).
 
 
 ## **Visualización de los Datos**
 
-Se realizó un dashboard de Power BI para la visualización interactiva de los resultados, facilitando el análisis intuitivo y la toma de decisiones informadas.
+Se realizó un dashboard de Power BI para la visualización interactiva de los resultados, facilitando el análisis intuitivo y la toma de decisiones informadas, el cual se puede consultar en el repositorio.
 
 <p align=center> 
 <img src="Images/Dash_siniestros.png" alt="alt text" width="800" style="display: block; margin: auto;"/>
