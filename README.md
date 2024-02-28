@@ -66,7 +66,7 @@ Se identificaron y manejaron los valores nulos en las columnas más relevantes, 
 
 Posteriormente se analizaron variables específicas, como el tipo de movilidad de las víctimas y los acusados, la frecuencia de siniestros por tipo de calle y la relación entre variables como la fecha del siniestro y la cantidad de víctimas.
 
-Se examinaron las correlaciones entre diferentes variables, como la relación entre el día de la semana y el número de víctimas, y se presentaron las correlaciones en una matriz de calor.
+Se examinaron las correlaciones entre diferentes variables, como la relación entre el día de la semana y el número de víctimas, y se presentaron las correlaciones en una matriz de calor, en la cual no se observaron correlaciones significativas entre variables.
 
 <p align=center> 
 <img src="Images/matriz.png" alt="alt text" width="500" style="display: block; margin: auto;"/>
